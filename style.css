@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+
+/* Card Based Layout - Base styles */
+
+body {
+  /* background: hsl(0, 80%, 64%); */
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+picture {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* background: rgb(155, 152, 152); */
+}
+.card2 {
+  /* background: rgb(118, 222, 240); */
+  margin-bottom: 1em;
+  /* margin: 0 !important; */
+}
+.card {
+  flex: 0 1 calc(25.6% - 1em);
+  margin: 0.3rem;
+  /* background: rgb(159, 66, 66); */
+}
+
+.card2 a {
+  text-decoration: none;
+}
+
+.card2 a:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+  /* padding: 1.4em; */
+  margin: 0.3rem 0rem;
+  padding-bottom: 0.2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.card-btn {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 0.8rem;
+  padding-left: 0.3rem;
+}
+.card-btn button {
+  background: rgb(0, 110, 84);
+  color: rgb(255, 255, 255);
+  border: none;
+  /* border-radius: 2rem; */
+  padding: 0.1em 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: small;
+  letter-spacing: 0.1em;
+  padding-top: 0.2em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.card-content p {
+  padding-left: 0.3rem;
+  font-size: 80%;
+  margin: 3px !important;
+  padding: 0 !important;
+  text-align: left;
+}
+
+/* Flexbox stuff */
+
+/* flex design 2  media queries*/
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    flex: 0 1 calc(99% - 1em);
+    margin: 0.3rem;
+  }
+} */
+.centered {
+  display: flex;
+  justify-content: center;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 300px) and (max-width: 767px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    flex: 0 1 49.8%;
+    margin: 0.3rem;
+    margin: 0px !important;
+  }
+  .card2:nth-child(odd) {
+    border-right: 1px solid gray;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    flex: 0 1 32%;
+    margin: 0.3rem;
+  }
+  .card2:nth-child(3n-1) {
+    /* background: rgb(62, 184, 189); */
+    /* border-left: 1px solid gray;
+    border-right: 1px solid gray; */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    flex: 0 1 calc(25.6% - 1em);
+    margin: 0.3rem;
+  }
+  .card2:nth-child(4n-1) {
+    /* background: rgb(62, 184, 189); */
+    /* border-right: 1px solid gray; */
+    /* border-right: 1px solid gray; */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */
+
+/* default */
+/* 
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    flex: 0 1 calc(25.6% - 1em);
+    margin: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card2 {
+    flex: 0 1 calc(50.8% - 1em);
+    margin: 0.3rem;
+  }
+}
+@media screen and (min-width: 60em) {
+  .card2 {
+    flex: 0 1 calc(25.6% - 1em);
+    margin: 0.3rem;
+  }
+} */
